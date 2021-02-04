@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <style>
+    table{font-family:Georgia, 'Times New Roman', Times, serif; border-collapse: collapse; width:100%} 
+    th{height:50px; background-color:hotpink;}
+    td{height:20px; text-align: center;}
+    th,td{padding: 5px; border-bottom: 1px solid #ddd}
+    tr:hover{background-color: #f5f5f5;}
+    </style>
+    <title>Boba Orders</title>
+</head>
+
+<body>
+    <h1>
+        <style>
+            h1{text-align: center;}
+        </style>
+        Table with Boba Orders
+    </h1>
+    <br>
+    <div style="overflow-x: scroll;">
+        <table>
+            <tr>
+                <th>Drink Name</th>
+                <th>Size</th>
+                <th>Ice Level</th>
+                <th>Sugar Level</th>
+                <th>Topping</th>
+                <th>Pricing</th>
+                <th>Tea Type</th>
+                <th>Drink Type</th>
+            </tr>
+            <tr>
+                <td>Oolong Milk Tea</td>
+                <td>M</td>
+                <td>50%</td>
+                <td>50%</td>
+                <td>Boba Original</td>
+                <td>$3.50</td>
+                <td>Black Tea</td>
+                <td>Hot and Cold</td>
+            </tr>
+            <tr>
+                <td>Jasmine Green Tea</td>
+                <td>L</td>
+                <td>50%</td>
+                <td>25%</td>
+                <td>Lychee Jelly</td>
+                <td>$3.50</td>
+                <td>Green Tea</td>
+                <td>Hot and Cold</td>
+            </tr>
+            <tr>
+                <td>Mango Herbal Iced Tea</td>
+                <td>L</td>
+                <td>0%</td>
+                <td>0%</td>
+                <td>Mango Star Jelly</td>
+                <td>$4.00</td>
+                <td>Herbal Tea</td>
+                <td>Cold</td>
+            </tr>
+            <tr>
+                <td>Matcha</td>
+                <td>S</td>
+                <td>0%</td>
+                <td>25%</td>
+                <td>None</td>
+                <td>$4.50</td>
+                <td>Green Tea</td>
+                <td>Hot</td>
+            </tr>
+        </table>
+    </div>
+    <form action="https://w3schools.com/action_page.php">
+        <fieldset>
+            <legend>Add a drink</legend>
+            <div>
+                <label for="drink">Drink</label>
+                <input type="text" id="drink" name="drink">
+            </div>
+            <div>
+                <p>Size</p>
+                <input type="radio" id="large" name="size" value="large"> 
+                <label for="large">Large</label>
+                <input type="radio" id="medium" name="size" value="medium">
+                <label for="medium">Medium</label>
+                <input type="radio" id="small" name="size" value="small">
+                <label for="small">Small</label>
+            </div>
+            <br>
+            <div>
+                <label for="ice">Ice Level</label>
+                <select name="ice" id="ice">
+                    <option value="100">100%</option>
+                    <option value="75">75%</option>
+                    <option value="50">50%</option>
+                    <option value="25">25%</option>
+                    <option value="0">0%</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="sugar">Sugar Level</label>
+                <select name="sugar" id="sugar">
+                    <option value="100">100%</option>
+                    <option value="75">75%</option>
+                    <option value="50">50%</option>
+                    <option value="25">25%</option>
+                    <option value="0">0%</option>
+                </select>
+            </div>
+            <div>
+                <p>Topping</p>
+                <div>
+                    <input type="checkbox" id="boba" name="topping1" value="boba original">
+                    <label for="boba">Boba Original</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="lychee" name="topping2" value="lychee">
+                    <label for="lychee">Lychee</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="mango" name="topping3" value="mango">
+                    <label for="mango">Mango</label>
+                </div>
+            </div>
+        </fieldset>
+        <br>
+        <strong>All finished?</strong>
+        <p>Thank you!</p>
+        <input type="submit" value="Place Order">
+    </form>
+ 
+</body>
+</html>
